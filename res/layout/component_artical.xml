@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	    </LinearLayout>
+	    
+	    <!-- 
+	    <fragment 
+	        android:name="com.auto.client.common.control.post_test.PostListView"
+	        android:id="@+id/test_fragment_post_list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	    -->
+	    
+	    <com.auto.client.common.control.pulldownview.PullDownView
+		    android:id="@+id/artival_pull_down_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#e4e4e4">
+		</com.auto.client.common.control.pulldownview.PullDownView>
+	    
+	    
+	    
+    </LinearLayout>
+
+</LinearLayout>

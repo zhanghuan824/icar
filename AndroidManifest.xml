@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.auto.client"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Custom_theme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gWZl1LekqmiUslVDo7p4Fbnu" >
+        </meta-data>
+
+        <activity
+            android:name="com.auto.client.module.maintenance.MaintainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.MaintenanceCategoryActivity"
+            android:label="@string/title_activity_maintenance_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.StationItemActivity"
+            android:label="@string/title_activity_maintenance_item"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.MaintainerActivity111"
+            android:label="@string/title_activity_maintainer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.auto.client.startup.StartupMetroActivity"
+            android:label="@string/title_activity_startup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.auto.client.startup.StartupActivity"
+            android:label="@string/title_activity_startup"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.auto.client.component.setting.UserInfoSettingActivity"
+            android:label="@string/title_activity_user_info_setting" >
+        </activity>
+        <activity
+            android:name="com.auto.client.component.setting.AreaSettingActivity"
+            android:label="@string/title_activity_area_setting" >
+        </activity>
+        <activity
+            android:name="com.auto.client.component.setting.CarModelSettingActivity"
+            android:label="@string/title_activity_car_model_setting" >
+        </activity>
+        <activity
+            android:name="com.auto.client.component.setting.BuyCarRegistActivity"
+            android:label="@string/title_activity_buy_car_regist" >
+        </activity>
+        <activity
+            android:name="com.auto.client.WebBrowserActivity"
+            android:label="@string/title_activity_web_browser" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.ChooseLocationActivity"
+            android:label="@string/title_activity_choose_location" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.ReservationMaintainActivity"
+            android:label="@string/title_activity_reservation_maintain" >
+        </activity>
+        <activity
+            android:name="com.auto.client.module.maintenance.StationMapActivity"
+            android:label="@string/title_activity_maintain_map"
+            android:parentActivityName="com.actionbarsherlock.app.SherlockActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.auto.client.module.maintenance.MaintainActivity" />
+        </activity>
+        <activity
+            android:name="com.auto.client.module.used.UsedMainActivity"
+            android:label="@string/title_activity_used_main"
+            android:parentActivityName="com.auto.client.startup.StartupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.auto.client.startup.StartupActivity" />
+        </activity>
+        <activity
+            android:name="com.auto.client.module.store.StoreMainActivity"
+            android:label="@string/title_activity_store_main"
+            android:parentActivityName="com.auto.client.startup.StartupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.auto.client.startup.StartupActivity" />
+        </activity>
+        <activity
+            android:name="com.auto.client.module.community.CommunityMainActivity"
+            android:label="@string/title_activity_community_main"
+            android:parentActivityName="com.auto.client.startup.StartupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.auto.client.startup.StartupActivity" />
+        </activity>
+        <activity
+            android:name="com.auto.client.module.market.MarketMainActivity"
+            android:label="@string/title_activity_market_main"
+            android:parentActivityName="com.auto.client.startup.StartupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.auto.client.startup.StartupActivity" />
+        </activity>
+    </application>
+
+</manifest>

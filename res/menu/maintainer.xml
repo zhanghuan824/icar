@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/maintain_menu_item_map_view"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_place"
+        android:title="地图"
+        android:onClick="onClickMap" />
+    
+    <item android:id="@+id/maintain_menu_item_share_action_provider_action_bar"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_overflow"
+        android:title="@string/maintain_action_bar_share_with">
+    	<menu>
+    	    <item android:id="@+id/form2"
+    	        android:icon="@drawable/ic_action_go_to_today"
+    	        android:title="@string/maintain_my_reservation"
+    	        android:onClick="onClickReservation" />
+    	    
+    	    <item android:id="@+id/location"
+    	        android:icon="@drawable/ic_action_map"
+    	        android:title="@string/maintain_select_area"
+    	        android:onClick="onChooseLocation" />
+    	    
+    	</menu>
+   </item>
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:background="@drawable/list_selector">
+	
+    <!-- ListView最左边的缩略图 -->
+    <LinearLayout
+        android:id="@+id/chat_thread_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg">
+        
+        <ImageView
+            android:id="@+id/chat_thread_list_image"
+            android:layout_width="80dip"
+            android:layout_height="60dip" />
+    </LinearLayout>
+    
+
+    <TextView 
+        android:id="@+id/chat_thread_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="瑶丫头"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/chat_thread_thumbnail"
+        android:layout_alignTop="@id/chat_thread_thumbnail"
+        android:textStyle="bold"/>
+    
+    <TextView 
+        android:id="@+id/latest_chat_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_thread_user_name"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/chat_thread_thumbnail"
+        android:text="主要服务项目包括：汽车修理，车身保养，维护，以优惠的价格吸引客户，留住客户！"
+     />
+    
+    <TextView
+        android:id="@+id/latest_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/chat_thread_user_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:text="23:09" />
+    
+</RelativeLayout>

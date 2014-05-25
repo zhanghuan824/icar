@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="server">http://192.168.0.100:8080</string>
+    <string name="app_name">icar</string>
+    <string name="action_settings">设置</string>
+    <string name="title_store">商城</string>
+    <string name="title_maintenance">保养</string>
+    <string name="title_used_market">二手车</string>
+    <string name="title_community">车友</string>
+    <string name="title_market">行情</string>
+    <string name="action_search">车友</string>
+    <string name="action_location_found">位置</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_help">帮助</string>
+    <string name="action_check_updates">更新</string>
+    <string name="list_pull_head_desc">松开可以刷新</string>
+    <string name="title_activity_maintenance_category">保养项目</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_maintenance_item">MaintenanceItemActivity</string>
+    <string name="title_activity_maintainer">MaintainerActivity</string>
+    <string name="title_activity_startup">StartupActivity</string>
+
+    <!-- 保养模块 -->
+    <string name="maintain_4s">保养站</string>
+    <string name="maintain_map">地图</string>
+    <string name="maintain_recommend">热门推荐</string>
+    <string name="maintain_history">保养历史</string>
+    <string name="maintain_action_bar_share_with">Share with…</string>
+    <string name="maintain_my_reservation">我的预约</string>
+    <string name="maintain_select_area">地区</string>
+
+    <!-- 滑动区域文字及链接 -->
+    <string name="title1">苹果在中国市场：Google的劣势反而是苹果的优势</string>
+    <string name="title2">吞噬大数据存储领域新机制——NoSQL模式解析</string>
+    <string name="title3">神舟九号：宇航员会携带什么移动应用上天？</string>
+    <string name="title4">2012苹果全球开发者大会（WWDC）12日开幕</string>
+    <string name="title5">Win8说：请把PC丢出窗外！</string>
+
+    <!-- 头部 -->
+    <string name="news_top_left_text1">博客</string>
+    <string name="news_top_left_text2">新闻</string>
+    <string name="title_news_category_tops">头条</string>
+    <string name="title_news_category_info">资讯</string>
+    <string name="title_news_category_blog">博客</string>
+    <string name="title_news_category_magazine">杂志</string>
+    <string name="title_news_category_domain">业界</string>
+    <string name="title_news_category_more">更多</string>
+    <string name="img_duoyun_desc">天气预报</string>
+    <string name="title_activity_user_info_setting">设置用户信息</string>
+    <string name="title_activity_area_setting">AreaSettingActivity</string>
+    <string name="title_activity_car_model_setting">CarModelSettingActivity</string>
+    <string name="title_activity_buy_car_regist">BuyCarRegistActivity</string>
+    <string name="title_activity_web_browser">WebBrowserActivity</string>
+    <string name="title_activity_choose_location">地区设置</string>
+    <string name="title_activity_reservation_maintain">ReservationMaintainActivity</string>
+    <string name="title_activity_maintain_map">MaintainMapActivity</string>
+    <string name="title_activity_used_main">UsedMainActivity</string>
+    <string name="title_activity_store_main">StoreMainActivity</string>
+    <string name="title_activity_community_main">CommunityMainActivity</string>
+    <string name="title_activity_market_main">MarketMainActivity</string>
+
+</resources>

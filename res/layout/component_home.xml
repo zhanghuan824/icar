@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeFragment" >
+
+    <fragment 
+        android:name="com.auto.client.common.control.moduleslider.ModuleSlider"
+        android:id="@+id/module_slider_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+	<fragment
+	    android:name="com.auto.client.common.control.imageslider.ImageSlider"
+	    android:id="@+id/image_slider_fragment"
+	    android:layout_weight="1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="6dp" />
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</LinearLayout>

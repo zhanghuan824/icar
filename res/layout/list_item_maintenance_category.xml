@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp" 
+    android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/maintenance_category_sub_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#443f3f"
+        android:paddingBottom="4dp" />
+
+</LinearLayout>

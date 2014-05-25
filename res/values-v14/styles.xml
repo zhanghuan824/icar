@@ -1,0 +1,49 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="Themes.ActionBarTab" parent="@style/Theme.Sherlock.Light">
+        <!-- 去除ActionBar的Divider -->
+        <item name="android:actionBarDivider">@null</item>
+        
+        <!-- 设置ActionBar Tab的高度 -->
+        <item name="android:actionBarSize">45dip</item>
+        
+        <!-- 设置ActionBar Tab字体的样式 -->
+        <item name="android:actionBarTabTextStyle">@style/Widget.Sherlock.ActionBar.TabText</item>
+        
+        <!-- 设置ActionBar Tab的样式,例如下面的红色指引，Tab之间的间隙等等 -->
+        <item name="android:actionBarTabStyle">@style/Widget.Sherlock.ActionBar.TabView</item>
+        
+        <!-- 设置ActionBar的样式，这里简单的设置了ActionBar的背景 -->
+        <item name="android:actionBarStyle">@style/Widget.Slider.ActionBar</item>
+    </style>
+    
+    
+     <style name="Widget.Slider.ActionBar" parent="@style/Widget.Sherlock.ActionBar.Solid">
+        <item name="android:background">#1791d2</item>        
+        <item name="android:backgroundSplit">#FFFFFF</item>
+        <item name="android:titleTextStyle">@style/test</item>
+        <item name="android:backgroundStacked">@drawable/base_action_bar_bg</item>
+    </style>
+
+    <style name="test" parent="@android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#000</item>
+    </style>
+     
+    <style name="Widget.Sherlock.ActionBar.TabText" parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.Sherlock.ActionBar.TabView" parent="Widget">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style> 
+
+
+</resources>

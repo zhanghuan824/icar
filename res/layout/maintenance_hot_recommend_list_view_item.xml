@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/recommend_bg" >
+        
+    <TextView
+         android:id="@+id/hot_recommend_title_text"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:textColor="#000" />
+     
+    <ImageView
+        android:id="@+id/hot_recommend_big_image"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="1dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+         android:id="@+id/hot_recommend_short_desc"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="14sp"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"/>
+        
+    	<TextView
+         android:id="@+id/hot_recommend_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@id/hot_recommend_short_desc"
+    	 android:layout_alignParentRight="true"
+    	 android:textSize="13sp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+        
+        <TextView 
+            android:id="@+id/recommend_visited_count"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="访问人数" />
+        
+        <TextView
+            android:id="@+id/recommend_favorite"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏次数" />
+        
+        <TextView 
+            android:id="@+id/recommend_comment_count"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论" />
+        
+    </RelativeLayout>
+
+</LinearLayout>
